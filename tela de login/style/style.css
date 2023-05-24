@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #6b38fb;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 30%;
+  padding: 4%;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #6b38fb;
+  outline: none;
+  font-size: 16px;
+  transition: border-bottom-color 0.3s;
+}
+
+input:focus {
+  border-bottom-color: #9b7aff;
+}
+
+.animated-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  color: #6b38fb;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s;
+  transform: translateY(-50%);
+}
+
+.input-field input:focus ~ .animated-label,
+.input-field input:valid ~ .animated-label {
+  top: 10px;
+  font-size: 12px;
+  transform: translateY(-150%);
+}
+
+.input-field input:not(:focus):valid ~ .animated-label {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+  background-color: #6b38fb;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #9b7aff;
+  color: #fff;
+}
+
+.btn-option {
+  color: #6b38fb;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.btn-option:hover {
+  color: #9b7aff;
+  transform: scale(1.1);
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+span {
+  color: #fff;
+  margin: 0 10px;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  background-color: #6b38fb;
+  padding: 10px 0;
+}
+
+.welcome h2 {
+  color: #fff;
+  font-size: 24px;
+  margin: 0;
+}

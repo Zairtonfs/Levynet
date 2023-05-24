@@ -1,0 +1,23 @@
+body {
+    background: linear-gradient(to right, #f6d365, #fda085);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+h1{
+    font-size: 10vw;
+    justify-content: center;
+    margin-top: 10%;
+    color: blueviolet;
+}
